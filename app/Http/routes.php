@@ -15,10 +15,3 @@ use App\Blog;
 
 	Route::resource('blog','BlogController');
 // });
-
-// Route::get('/insert', function(){
-// 	$blog=new Blog;
-//         $blog->title='lkjlj';
-//         $blog->content='kjk';
-//         $blog->save();
-//     });
