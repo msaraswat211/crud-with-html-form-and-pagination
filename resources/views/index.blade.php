@@ -3,7 +3,7 @@
 
 
 {{-- page header start --}}
-<h1>All Records</h1>
+<h1>All Records </h1>
 {{-- page header end --}}
 
 <a href="{{ route('blog.create') }}" class="btn btn-primary pull-right">Create New Data</a>
@@ -21,5 +21,13 @@
 	</tr>
 	@each('blogs',$blogs,'blog')
 </table>
+
+{{--pagination--}}
+<h4>
+	Total records : {{ $blogs->total() }},
+	&nbsp;&nbsp; Per page records: {{ $blogs->total() }}
+</h4>
+
+{{ $blogs->links() }}
 {{-- result table end --}}
 @endsection
